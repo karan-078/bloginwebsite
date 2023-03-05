@@ -188,6 +188,17 @@ gap: 2rem;
         height: 3rem;
     
     }
+
+    .links-container{
+     margin-left: 2px;
+     
+    }
+
+    .navbar{
+      padding: 0 0;
+      overflow: hidden;
+      overflow-x: scroll;
+    }
   }
 
    
