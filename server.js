@@ -1,0 +1,61 @@
+const express = require("express");
+
+const path = require("path");
+
+const fileupload = require("express-fileupload");
+let intial_path = path.join(__dirname, "public");
+
+const app = express();
+app.use(express.static(intial_path));
+app.use(fileupload());
+app.get("/", (req, res) => {
+  res.sendFile(path.join(intial_path, "home.html"));
+});
+
+app.get("/editor", (req, res) => {
+  res.sendFile(path.join(intial_path, "editor.html"));
+});
+
+//  upload link
+
+app.post("/upload", (req, res) => {
+  let file = req.files.image;
+  let date = new Date();
+
+  //   image name
+  let imagename = date.getDate() + date.getTime() + file.name;
+
+  // image upload path
+  let path = "public/uploads/" + imagename;
+
+  // create upload
+  file.mv(path, (err, result) => {
+    if (err) {
+      throw err;
+    }
+    //   our image upload path
+    else {
+      res.json(`uploads/${imagename}`);
+    }
+  });
+});
+
+app.get("/admin", (req,res)=>{
+  res.sendFile(path.join(intial_path,"dashboard.html")) 
+})
+
+app.get("/:blog",(req,res)=>{
+  res.sendFile(path.join(intial_path,"blog.html"))
+})
+
+app.get("/:blog/editor", (req,res)=>{
+  res.sendFile(path.join(intial_path,"editor.html"))
+})
+
+app.use((req, res) => {
+  res.json("404");
+})
+app.listen(process.env.PORT || 3000,() => {
+  console.log("listening..");
+});
+

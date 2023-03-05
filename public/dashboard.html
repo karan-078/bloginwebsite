@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- firebase auth ui cdn  -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+    />
+
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <script
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+      defer
+    ></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+      defer
+    ></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+      defer
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"
+      defer
+    ></script>
+
+    <script src="js/firebase.js" defer></script>
+
+    <script src="js/dashboard.js" defer></script>
+
+    <script src="js/nav.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="./img/k.png" alt="logo" class="logo">
+
+      <ul class="links-container">
+        <li class="link-item"><a class="link" href="/">Home</a></li>
+
+        <li class="link-item"><a class="link" href="/editor">Editor</a></li>
+      </ul>
+    </nav>
+
+    <!-- your blogs dashbord heading -->
+    <h1 class="heading">your blogs</h1>
+
+    <!-- blog section -->
+    <section class="blogs-section">
+      <!-- <div class="blog-card">
+                <img src="" alt="" class="blog-image">
+
+    
+                <h1 class="blog-titel">blog-titel</h1>
+                <p class="blog-overview">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias debitis soluta blanditiis! Cupiditate praesentium optio, laudantium mollitia odio et consequuntur autem eum saepe, quo asperiores amet provident possimus suscipit culpa?
+                </p>
+                <a href="/" class="btn dark">read</a>
+                <a href="/"class="btn dark">edit</a>
+                <a href="/"class="btn dark">delete</a>
+              
+            </div> -->
+    </section>
+    <!-- login -->
+
+    <div class="login">
+      <div id="loginUI"></div>
+    </div>
+  </body>
+</html>

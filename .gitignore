@@ -1,0 +1,7 @@
+
+# ignore all node_modeules
+.node_modeules
+
+# ignore .json file
+.package-lock.json
+ 

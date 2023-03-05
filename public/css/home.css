@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500&family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+   
+}
+
+::selection{
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: #fff;
+    z-index: 9;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+
+}
+.links-container{
+    display: flex;
+    list-style: none;
+      margin-left: 1rem;
+}
+
+.link{
+    padding: 10px;
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.header{
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('https://img.freepik.com/free-photo/top-view-person-writing-laptop-with-copy-space_23-2148708035.jpg?w=1380&t=st=1677579056~exp=1677579656~hmac=00bd750d59b58ccf989855e13bf513362e4cc7c940005c7a6688b71aee4d848a');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .content{
+    text-align: center;
+}
+
+.heading{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 80px;
+    line-height: 60px;
+    margin-bottom: 80px;
+}
+
+.heading .small{
+    display: block;
+    font-size: 40px;
+}
+
+.heading .no-fill{
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff88;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #312c7d;
+}
+
+.btn2{
+     
+    font-size: small;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize; 
+    
+}
+
+.blogs-section{
+    word-break: break-word;
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    background-color: #ececee; 
+   
+}
+
+.blog-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.icon{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    padding: 10px 20px;
+}
+.blog-overview{
+    margin: 10px 0 20px;
+    line-height: 30px;
+}
+
+.dark{
+    color: #516a9e;
+}
+
+
+
+.blog-titel{
+    color: #fff;
+    background-color: #fff;
+    
+}
+
+.blog-card{
+ background-color: #fff;
+ padding: 10px 10px;
+ min-height: 30rem;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ border: 1px solid rgba(52, 47, 47, 0.333);
+ 
+    }
+  figure{
+border: 8px;
+
+
+  }
+
+  .blog-containt{
+margin-top: 1rem;
+   padding: 0px 10px 10px 10px;
+   border-top-right-radius: 4px;
+   border-top-left-radius: 4px;
+   min-height: 12rem;
+  }
+
+.btn-container{
+height: 3rem;
+display: flex;
+align-items: center;
+gap: 2rem;
+}
+
+
+
+
+
+   
