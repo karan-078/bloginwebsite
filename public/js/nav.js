@@ -1,6 +1,6 @@
 let ul = document.querySelector('.links-container');
 
-console.log(ul)
+
 
 auth.onAuthStateChanged((user)=>{
     if(user){

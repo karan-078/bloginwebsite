@@ -15,7 +15,6 @@ body{
     font-family: 'poppins', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6rem;
-   
 }
 
 ::selection{
@@ -45,11 +44,11 @@ body{
 .links-container{
     display: flex;
     list-style: none;
-      margin-left: 1rem;
+      margin-left: 5px;
 }
 
 .link{
-    padding: 10px;
+    padding: 7px;
     text-decoration: none;
     color: #1b1b1b;
 }
@@ -112,7 +111,6 @@ body{
     word-break: break-word;
     width: 100%;
     padding: 50px 5vw;
-    display: grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
@@ -206,7 +204,25 @@ gap: 2rem;
        
        
     }
-    
+    .btn-container{
+        gap: 1rem;
+        }
+        
+       .header{
+        height: calc(100vh - 300px);
+       } 
+
+       .content .heading{
+        font-size: 50px;
+       }
+
+       .content .heading .small{
+        font-size: 30px;
+       }
+
+       .content .heading .no-fill{
+        font-size: 65px;
+       }
   }
 
    
