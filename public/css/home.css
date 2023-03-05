@@ -182,5 +182,12 @@ gap: 2rem;
 
 
 
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 3rem;
+        height: 3rem;
+    
+    }
+  }
 
    
