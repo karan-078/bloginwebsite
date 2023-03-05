@@ -199,6 +199,14 @@ gap: 2rem;
       overflow: hidden;
       overflow-x: scroll;
     }
+   
+    .blogs-section{
+      
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       
+       
+    }
+    
   }
 
    
